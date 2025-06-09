@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+</head>
+
+<body>
+    <header>
+        <h1 id="main-title">Quiz</h1>
+    </header>
+    <main>
+        <!-- SCORE CONTAINER -->
+        <section id="score-container" class="hide" aria-live="polite">
+            <h2>Parabéns</h2>
+            <p id="display-score"><span>90</span>%</p>
+            <p>Você acertou <span id="correct-answer">0</span> de <span id="questions-qty">10</span> perguntas</p>
+            <button id="restart" aria-label="Reiniciar o quiz">Reiniciar</button>
+        </section>
+        <!-- QUIZZ CONTAINER -->
+        <section id="quizz-container">
+            <p id="question"><span id="question-number">1</span> - <span id="questions-text">Qual é a unidade de medida para metros</span></p>
+            <div id="answers-box" role="group" aria-label="Opções de resposta">
+                <button><span class="btn-letter">a</span> <span class="question-answer">Metro</span></button>
+                <button><span class="btn-letter">b</span> <span class="question-answer">Kilometro</span></button>
+                <button><span class="btn-letter">c</span> <span class="question-answer">Centimetro</span></button>
+                <button><span class="btn-letter">d</span> <span class="question-answer">Milimetro</span></button>
+            </div>
+        </section>
+        <!-- TEMPLATE RESPOSTA -->
+        <button class="answer-template hide" tabindex="-1"><span class="btn-letter">a</span> <span class="question-answer"></span></button>
+    </main>
+    <script src='/js/scripts.js'></script>
+</body>
+</html>
